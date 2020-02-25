@@ -9,7 +9,7 @@ a {
     color: #888;
 }
 a:hover, li:hover {
-    color: #DDD;
+    color: #AACCAA;
 }
 body {
     background-color: #222;
@@ -23,7 +23,7 @@ footer {
 }
 .container {
     /*display: inline-block;*/
-    background-color: darkkhaki;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
     /*width: 300px;
     height: 600px;*/
     color: black;
