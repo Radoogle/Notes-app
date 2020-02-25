@@ -23,3 +23,8 @@ function saveNote () {
     localStorage.setItem(key, value);
     
 }
+
+function clearLocalStorage () {
+    localStorage.clear();
+    location.reload();
+}
