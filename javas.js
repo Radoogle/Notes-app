@@ -25,6 +25,10 @@ function saveNote () {
 }
 
 function clearLocalStorage () {
-    localStorage.clear();
-    location.reload();
+    if (list.childNodes.length > 1) {
+            if (confirm("Are you sure you want to delete ALL the notes?")) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
 }
