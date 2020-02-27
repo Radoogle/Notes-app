@@ -50,6 +50,9 @@ main {
     margin-bottom: 10px;
     border: 1px solid green;
 }
+#savednotes button {
+    margin-bottom: 50px;
+}
 button b {
     text-decoration: underline;
 }
