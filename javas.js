@@ -1,15 +1,39 @@
 var inputNote = document.getElementById("inputnote"),
     list = document.getElementById("savednotes");
 
+// read the old notes saved in local storage and display in a list
 for (let i = 0; i < localStorage.length; i++) {
     let li = document.createElement("li"),
         key = localStorage.key(i);
     
     li.innerHTML = localStorage.getItem(key);
     list.appendChild(li);
+
 }
 
+var butons = document.getElementsByClassName("edit-btn");
+for (let buton of butons) {
+    buton.setAttribute('onclick', 'editButton();');
+}
 
+function editButton () {
+    if (list.childNodes.length > 1) {
+        let nodes = document.getElementsByTagName("li");
+        for (let node of nodes) {
+            node.setAttribute("contenteditable", "true");
+        }
+    }
+}
+
+function saveButton () {
+    if (list.childNodes.length > 1) {
+        let nodes = document.getElementsByTagName("li");
+        for (let node of nodes) {
+            
+            node.setAttribute("contenteditable", "false");
+        }
+    }
+}
 
 function saveNote () {
     let li = document.createElement("li"),
