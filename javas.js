@@ -8,12 +8,6 @@ for (let i = 0; i < localStorage.length; i++) {
     
     li.innerHTML = localStorage.getItem(key);
     list.appendChild(li);
-
-}
-
-var butons = document.getElementsByClassName("edit-btn");
-for (let buton of butons) {
-    buton.setAttribute('onclick', 'editButton();');
 }
 
 function editButton () {
@@ -29,7 +23,6 @@ function saveButton () {
     if (list.childNodes.length > 1) {
         let nodes = document.getElementsByTagName("li");
         for (let node of nodes) {
-            
             node.setAttribute("contenteditable", "false");
         }
     }
@@ -47,7 +40,6 @@ function saveNote () {
     const key = Date.now();
     const value = noteText;
     localStorage.setItem(key, value);
-    
 }
 
 function clearLocalStorage () {
