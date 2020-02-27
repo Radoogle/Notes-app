@@ -18,7 +18,9 @@ function saveNote () {
     inputNote.value = "";
     li.innerHTML = noteText;
     list.appendChild(li);
-    const key = localStorage.length;
+    //const key = localStorage.length;
+    // set the key to date+time in miliseconds so it's unique.
+    const key = Date.now();
     const value = noteText;
     localStorage.setItem(key, value);
     
