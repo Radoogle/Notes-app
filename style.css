@@ -49,10 +49,14 @@ main {
 #savednotes > li {
     margin-bottom: 10px;
     border: 1px solid green;
+    width: auto;
+    padding: 2px 5px 2px 5px;
 }
 #savednotes button {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    display: inline;
 }
 button b {
     text-decoration: underline;
 }
+
