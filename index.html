@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes App</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header><h1>Notes App</h1></header>
     <main>        
         <div class="container" id="left">
-            <h2>New note</h2>
+            <h2>New note<i class="fab fa-free-code-camp"></i></h2>
             <form>
                 <textarea id="inputnote" name="inputnote" rows="5" cols="30" placeholder="write your notes here" required></textarea>
                 <br>
@@ -26,7 +27,8 @@
             <button onclick="clearLocalStorage()" accesskey="d"><b>D</b>elete all</button>
         </div>
     </main>
-    <footer>&copy; 2020 <a href="#">Radu Harangus</a></footer>
+    <footer>&copy; 2020 <a href="#">Radu Harangus</a>
+    </footer>
     <script src="javas.js"></script>
     <noscript>This website needs Java Script in order to work properly!</noscript>
 </body>
