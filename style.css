@@ -59,4 +59,6 @@ main {
 button b {
     text-decoration: underline;
 }
-
+.fa-free-code-camp::before {
+    content: "\f2c5"; 
+}
